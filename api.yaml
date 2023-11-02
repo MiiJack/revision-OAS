@@ -9,7 +9,7 @@ paths:
   /books:
     get:
       summary: Gets all books
-      description: Return all books ordered by author name ASC
+      description: Return all books ordered by author name ascending 
       operationId: getBooks
       parameters:
         - name : bookName
@@ -28,7 +28,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/Book'
     put:
-      summary: Create or update of a list of books (idempotent request)
+      summary: Create or update of a list of books
       operationId: updateBooks
       requestBody:
         content: 
